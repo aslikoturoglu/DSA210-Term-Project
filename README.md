@@ -1,6 +1,6 @@
 # DSA210 Term Project: Correlation Between Obesity and Socioeconomic Status Based on Regions of Turkey
 ## Project Overview and Motivation 
-Over the years, due to many developments in biology, technology, agriculture and etc. I think that human's body and health have been affected in bad way. Even though many research have been done, I have wondered that are human beings informed sufficiently. In my opinion, one of the problems which humans are facing is obesity. Additionaly, it seems to me that in different cities that I had visit, people's weight are changing due to their region and socioeconomic status.
+I have thought that over the years, due to many developments in biology, technology, agriculture and etc. human's body and health have been affected in bad way. Even though many research have been done, I have wondered if human beings are informed sufficiently. In my opinion, one of the problems which humans are facing is obesity. Additionaly, it seems to me that in different cities that I had visit, people's weight are changing due to their region and socioeconomic status.
 
 My project is trying to find answers to
   - Does socioeconomic level of people have an impact on obesity? 
@@ -24,7 +24,7 @@ I will collect data from two different sources:
 1. **Data Collection**
    - Importing and calculating the level of socioeconomic grades into Excel records.
    - Importing the percentages of obesity in regions into Excel records.
-   - Importing the Excel records into a Pandas DataFrame and preprocess the data.
+   - Importing the Excel records into a Pandas DataFrame and process the data.
 
 2. **Visualization**
    - Visiualizing the datas as:
@@ -43,6 +43,7 @@ I will collect data from two different sources:
    - Analyze how region and socioeconomic status are related to obesity.
 
 ## Technologies and Tools
-**Python:** For data cleaning and statistical analysis
-**Pandas:** To manipulate and preprocess data
-Using ML
+- **Python:** For statistical analysis
+- **Pandas:** To process data
+- **Machine Learning**
+  - Linear Regression
