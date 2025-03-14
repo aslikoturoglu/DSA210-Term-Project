@@ -45,5 +45,4 @@ I will collect data from two different sources:
 ## Technologies and Tools
 - **Python:** For statistical analysis
 - **Pandas:** To process data
-- **Machine Learning**
-  - Linear Regression
+- **Machine Learning Model:** Linear Regression
