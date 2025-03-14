@@ -41,3 +41,8 @@ I will collect data from two different sources:
 4. **Trend Analysis**
    - Identifying peaks and plateus
    - Analyze how region and socioeconomic status are related to obesity.
+
+## Technologies and Tools
+**Python:** For data cleaning and statistical analysis
+**Pandas:** To manipulate and preprocess data
+Using ML
