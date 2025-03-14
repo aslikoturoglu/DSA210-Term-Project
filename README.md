@@ -34,7 +34,7 @@ I will collect data from two different sources:
      - Correlation between socioeconomic status and obesity
        
 3. **Hypothesis Testing**
-   - Test hypotheses like:
+   - Test hypotheses:
      - Region which are nearby the sea has positive impact to people with not getting weight and become obese.
      - Socioeconomic status have positive impact to people with not getting weight and become obese.
 
