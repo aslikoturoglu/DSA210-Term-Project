@@ -30,7 +30,6 @@ I will collect data from two different sources:
    - Visiualizing the datas as:
      - Correlation between region and socioeconomic status
      - Correlation between region and obesity
-     - Correlation between region and obesity
      - Correlation between socioeconomic status and obesity
        
 3. **Hypothesis Testing**
