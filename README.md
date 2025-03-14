@@ -1,4 +1,4 @@
-# DSA210 Term Project: Correlation Between Obesity and Socioeconomic Status Based on Region of Turkey
+# DSA210 Term Project: Correlation Between Obesity and Socioeconomic Status Based on Regions of Turkey
 ## Project Overview and Motivation 
 Over the years, due to many developments in biology, technology, agriculture and etc. I think that human's body and health have been affected in bad way. Even though many research have been done, I have wondered that are human beings informed sufficiently. In my opinion, one of the problems which humans are facing is obesity. Additionaly, it seems to me that in different cities that I had visit, people's weight are changing due to their region and socioeconomic status.
 
