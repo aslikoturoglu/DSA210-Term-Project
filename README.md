@@ -92,16 +92,11 @@ I will collect data from two different sources:
 
      - Coastal Cities in Each Region (For instance: Marmara Region)
        ![image](https://github.com/user-attachments/assets/71fa2ed5-8165-41ab-b4c2-474cf835e627)
-
-     - Distribution of Coastal and Non-Coastal Regions in Turkey with Socioeconomic Statues
-       ![image](https://github.com/user-attachments/assets/a9c29fee-e2db-4132-9340-c267201cea81)
-
-     - Correlation Matrix: Socioeconomic Statues and Coastality based on Regions
-       ![image](https://github.com/user-attachments/assets/1d0a2e1d-38c4-4c1a-853d-62c74d8d8144)
        
 3. **Hypothesis Testing**
    - Test hypotheses:
        1) **Null Hypothesis:** Socioeconomic status have no impact to people with not getting weight and become obese based on regions of Turkey.
+          
           **Alternative Hypothesis:** Socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey.
           
           - Obesity Level and Cities' Socioeconomic Levels with Classment of Regions' in Turkey
@@ -110,11 +105,18 @@ I will collect data from two different sources:
           - Correlation Matrix: Socioeconomic Statues and Obesity based on Regions
              ![image](https://github.com/user-attachments/assets/6188f1bd-bed7-48b2-b8dc-4d7b81a66d47)
 
+          - Mann-Whitney U: 1064.00
+          - p-value: 0.0192
+
           As can be seen, there is **correlation** detected between socioeconomic statues and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.66** which is a number quite trustworthy and there is a direct proposition .
 
-          However we cannot decide is it a null or alternative hypothesis since we do not have the p value.
+          However, we decide that is a null or alternative hypothesis with the p-value.
+          Since p-value is 0.0192 smaller than 0.05, we **reject null hypothesis**.
+
+          Therefore, _socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey._
 
       2)  **Null Hypothesis:** Regions which are nearby the sea have no impact to people with not getting weight and become obese.
+         
           **Alternative Hypothesis:** Regions which are nearby the sea have positive impact to people with not getting weight and become obese.
           
      - Obesity Level and Coastal Regions in Turkey
@@ -123,14 +125,35 @@ I will collect data from two different sources:
      - Correlation Matrix: Coastal Cities and Obesity based on Regions
        ![image](https://github.com/user-attachments/assets/3ce66264-3d48-49c8-a407-6f0c84307d32)
 
-     As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.39** which is a number not very strong but it is **direct proposition **.
-     Since 0.39 is very small, 
+     - Mann-Whitney U: 1011.00
+     - p-value: 0.0069
 
-     Therefore it is a _alternative hypothesis_.
+     As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.39** which is a number not very strong but it is direct proposition.
 
-4. **Trend Analysis**
-   - Identifying peaks and plateus
-   - Analyze how region and socioeconomic status are related to obesity.
+       However, we decide that is a null or alternative hypothesis with the p-value.
+       Since p-value is 0.0069 smaller than 0.05, we **reject null hypothesis**.
+
+     Therefore, _regions which are nearby the sea have positive impact to people with not getting weight and become obese._
+
+     3) **Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
+        
+        **Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
+
+     - Distribution of Coastal and Non-Coastal Regions in Turkey with Socioeconomic Statues
+       ![image](https://github.com/user-attachments/assets/a9c29fee-e2db-4132-9340-c267201cea81)
+
+     - Correlation Matrix: Socioeconomic Statues and Coastality based on Regions
+       ![image](https://github.com/user-attachments/assets/1d0a2e1d-38c4-4c1a-853d-62c74d8d8144)
+
+     - Mann-Whitney U: 1317.50
+     - p-value: 0.0000
+
+     As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.58**, it is direct proposition.
+
+       However, we decide that is a null or alternative hypothesis with the p-value.
+       Since p-value is 0.0000 smaller than 0.05, we **reject null hypothesis**.
+
+     Therefore, _Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.._
 
 ## Technologies and Tools
 - **Python:** For statistical analysis
