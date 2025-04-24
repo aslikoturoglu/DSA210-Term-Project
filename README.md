@@ -8,20 +8,27 @@ My project is trying to find answers to
   - Does the distance to sea affecting people on facing obesity?
 
 ## Hypothesis
-  - **1. Null Hypothesis:** Socioeconomic status have no impact to people with not getting weight and become obese based on regions of Turkey.
-  - **1. Alternative Hypothesis:** Socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey.
-    
-  - **2. Null Hypothesis:** Regions which are nearby the sea have no impact to people with not getting weight and become obese.
-  - **2. Alternative Hypothesis:** Regions which are nearby the sea have positive impact to people with not getting weight and become obese.
-    
-  - **3. Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
-  - **3. Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
+  **1)** **Null Hypothesis:** Socioeconomic status have no impact to people with not getting weight and become obese based on regions of Turkey.
+
+  **Alternative Hypothesis:** Socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey.
+  
+  -----------------------------------------------------------------------------------------------
+  
+  **2)** **Null Hypothesis:** Regions which are nearby the sea have no impact to people with not getting weight and become obese.
+  
+**Alternative Hypothesis:** Regions which are nearby the sea have positive impact to people with not getting weight and become obese.
+   
+  -----------------------------------------------------------------------------------------------
+  
+**3)** **Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
+
+**Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
     
 ## Project Goal and Plan
 I will create grades for socioeconomic levels based on regions, then I will make a correlation between socioeconomic level and obesity level. So that, I can see how are they correlated. Additionally, I will search the hypothesis that coastal regions' impact on obesity and socioeconomic statues with comparing the datas that I will be working on.
 
 ## Data Collection 
-I will collect data from two different sources:
+I will collect data from three different sources:
   1. **Obesity Percentages in Different Regions in Turkey:** From The Ministry of Health of Turkey
      - This sources gives the information of 12 different regions' obesity percentages who are the people older than 15 years old.
      - _https://hsgm.saglik.gov.tr/tr/obezite_
