@@ -1,6 +1,6 @@
 # DSA210 Term Project: Correlation Between Obesity, Socioeconomic Status, and Coastal Regions Based on Regions of Turkey
 ## Project Overview and Motivation 
-I have thought that over the years, due to many developments in biology, technology, agriculture and etc. human's body and health have been affected in bad way. Even though many research have been done, I have wondered if human beings are informed sufficiently. In my opinion, one of the problems which humans are facing is obesity. Additionaly, it seems to me that in different cities that I had visit, people's weight are changing due to their region and socioeconomic status.
+I am a student iin Sabancı University, Aslı Koturoğlu. I have thought that over the years, due to many developments in biology, technology, agriculture and etc. human's body and health have been affected in bad way. Even though many research have been done, I have wondered if human beings are informed sufficiently. In my opinion, one of the problems which humans are facing is obesity. Additionaly, it seems to me that in different cities that I had visit, people's weight are changing due to their region, availability to access to coasts and socioeconomic status.
 
 My project is trying to find answers to
   - Does socioeconomic level of people have an impact on obesity? 
@@ -23,29 +23,18 @@ My project is trying to find answers to
 **3)** **Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
 
 **Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
-    
-## Project Goal and Plan
-I will create grades for socioeconomic levels based on regions, then I will make a correlation between socioeconomic level and obesity level. So that, I can see how are they correlated. Additionally, I will search the hypothesis that coastal regions' impact on obesity and socioeconomic statues with comparing the datas that I will be working on.
 
 ## Data Collection 
 I will collect data from three different sources:
   1. **Obesity Percentages in Different Regions in Turkey:** From The Ministry of Health of Turkey
+     - _Region_Obesity_Level__
+     - Importing the Excel records into a Pandas DataFrame and process the data.
      - This sources gives the information of 12 different regions' obesity percentages who are the people older than 15 years old.
+     - Data was ready to use, I only combined some parts to each other since there are only 7 regions in Turkey.
      - _https://hsgm.saglik.gov.tr/tr/obezite_
        
-  2. **Socioeconomic Levels:** From The Ministry of Industry and Technology
-     - This sources gives the information of all citys' townships' level of socioeconomic level in 6 levels.
-     - I will give each city and region a score, because the data is for township.
-     - _https://www.sanayi.gov.tr/assets/pdf/birimler/2022-ilce-sege.pdf_
-       
-  3. **Coastal Cities and Regions:** From the Wikipedia Turkey Map
-     - This sources has a picture of Turkey map.
-     - I have written "1" for cities with coast, and "0" with cities does not have coast.
-     - _https://tr.m.wikipedia.org/wiki/Dosya:Turkey_map.svg_
-     
-## Data Analysis
-1. **Data Collection**
-1) _Socioeconomic Statues:_
+       -----------------------------------------------------------------------------------------------
+  2. **Socioeconomic status:** From The Ministry of Industry and Technology
      - _City_Region_Socioeconomic_Level__
      - Importing the Excel records into a Pandas DataFrame and process the data.
      - Importing 6 levels of socioeconomic levels for each city. Class 1 is presenting the highest socioeconomic level, and class 6 is presenting the lowest socioeconomic level.
@@ -61,108 +50,182 @@ I will collect data from three different sources:
      - With these steps, I have cleaned and organized my data.
   
      - Later, I have cleaned data with only taking the regions' socioeconomic rates: _TheR_Regions_Rate_Last_
+     - _https://www.sanayi.gov.tr/assets/pdf/birimler/2022-ilce-sege.pdf_
        
-  2) _Coastal Cities and Regions_
+        -----------------------------------------------------------------------------------------------
+  3. **Coastal Cities and Regions:** From the Wikipedia Turkey Map
      - _City_Region_Socioeconomic_Level__
      - Importing the Excel records into a Pandas DataFrame and process the data.
-     - I have written "1" for coastal cities, and "0" for non-coastal cities to column called "Sea" based on Turkey Map.
-    
-  3) _Obesity Level_
-     - _Region_Obesity_Level__
-     - Importing the Excel records into a Pandas DataFrame and process the data.
-     - Data was ready to use, I only combined some parts to each other since there are only 7 regions in Turkey.
+     - This sources has a picture of Turkey map.
+     - I have written "1" for cities with coast, and "0" with cities does not have coast.
+     - _https://tr.m.wikipedia.org/wiki/Dosya:Turkey_map.svg_
+     
+## Data Analysis
 
-2. **Visualization**
-   - Visiualizing the datas:
-     - with:
+  **Exploratory Data Analysis (EDA)**
+  
+  - Identifying peak obesity levels, regions with number of coasts, and socioeconomic levels based on cities and regions based on Turkey.
+
+-----------------------------------------------------------------------------------------------
+  **Correlation Analysis**
+  
+  - Measuring correlation between obesity and socioeconomic status.
+  - Measuring correlation between obesity and coastal regions.
+  - Measuring correlation between coastal regions and socioeconomic status.
+
+-----------------------------------------------------------------------------------------------
+    
+ **Visualization**
+   - Using line plots, bar charts, scatter plots, pie charts, correlation matrixes and histograms
+   -  Visiualizing the datas with:
        - matplotlib.pyplot
        - matplotlib.patches
        - seaborn
-     - some examples: 
-     - Obesity Rates by Regions in Turkey
-       ![image](https://github.com/user-attachments/assets/32bd5bbb-0b74-4ace-aba0-8c5917deff3f)
+  
+## Findings
+**Obesity Rates by Regions in Turkey**
 
-     - Socioeconomic Levels of Cities in Turkey
-       ![image](https://github.com/user-attachments/assets/fc43c85e-ddf1-4f7d-b200-5bd4b1933661)
+The grapghs below showes the distribution of obesity based on seven regions in Turkey.
+- x-axis shows the regions
+- y-axis shows the obesity rate
+As can be seen in the graph, Turkey's east sides are the least likely to be an obese, and middle side is the most likely to be an obese in Turkey.
 
-     - Distribution of Coastal vs Non-Coastal Cities in Turkey
-       ![image](https://github.com/user-attachments/assets/a6125668-bba4-4530-beee-0cad5ce02e52)
+  ![image](https://github.com/user-attachments/assets/32bd5bbb-0b74-4ace-aba0-8c5917deff3f)
 
-     - Socioeconomic Status by Regions in Turkey
-       ![image](https://github.com/user-attachments/assets/292a1e89-b7b3-4466-883f-d57e63767c85)
+  ![image](https://github.com/user-attachments/assets/aa1b611b-e48d-457a-83cc-b10c234d7056)
 
-     - Distribution of Coastal Cities in Turkey Based on Regions
-       ![image](https://github.com/user-attachments/assets/d00bc130-9962-48cc-906c-9e8b6746da91)
 
-     - Distribution of Coastal and Non-Coastal Cities in Turkey with Socioeconomic Statues
-       ![image](https://github.com/user-attachments/assets/5eae69c6-3922-4122-85bf-1db55b0d47cf)
+----------------------------------------------------------------------------------------------------------------
+**Socioeconomic Levels in Turkey**
 
-     - Coastal Cities in Each Region (For instance: Marmara Region)
-       ![image](https://github.com/user-attachments/assets/71fa2ed5-8165-41ab-b4c2-474cf835e627)
-       
-3. **Hypothesis Testing**
-   - Test hypotheses:
-       1) **Null Hypothesis:** Socioeconomic status have no impact to people with not getting weight and become obese based on regions of Turkey.
-          
-          **Alternative Hypothesis:** Socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey.
-          
-          - Obesity Level and Cities' Socioeconomic Levels with Classment of Regions' in Turkey
-             ![image](https://github.com/user-attachments/assets/6aa0b5aa-7892-4542-9ff5-90192aa4f356)
+The bar chart below representing the distribution of the socioeconomic levels in 81 cities in Turkey. Cities are grouped based on regions.
+- x-axis shows the cities
+- y-axis shows the socioeconomic level rate
+As can be seen in the grapgh, there is an decline of socioeconomic status.
 
-          - Correlation Matrix: Socioeconomic Statues and Obesity based on Regions
-             ![image](https://github.com/user-attachments/assets/6188f1bd-bed7-48b2-b8dc-4d7b81a66d47)
+ ![image](https://github.com/user-attachments/assets/fc43c85e-ddf1-4f7d-b200-5bd4b1933661)
 
-          - Mann-Whitney U: 1064.00
-          - p-value: 0.0192
+Additionaly the frequency of the socioeconomic level is represented in below as histogram.
 
-          As can be seen, there is **correlation** detected between socioeconomic statues and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.66** which is a number quite trustworthy and there is a direct proposition .
+ ![image](https://github.com/user-attachments/assets/1d931092-c47c-4b93-9215-6ad2f9f7a34c)
 
-          However, we decide that is a null or alternative hypothesis with the p-value.
-          Since p-value is 0.0192 smaller than 0.05, we **reject null hypothesis**.
 
-          Therefore, _socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey._
+Furthermore,the bar chart below is showing the distribution of socioeconomic levels in seven regions.
+- x-axis shows the regions
+- y-axis shows the socioeconomic level rate
+As can be seen, the region with the best socioeconomic level is Marmara, then Aegean is coming; and the region with the least socioeconomic level is Southeastern Anatolia, then Eastern Anatolia is coming.
 
-      2)  **Null Hypothesis:** Regions which are nearby the sea have no impact to people with not getting weight and become obese.
-         
-          **Alternative Hypothesis:** Regions which are nearby the sea have positive impact to people with not getting weight and become obese.
-          
-     - Obesity Level and Coastal Regions in Turkey
-       ![image](https://github.com/user-attachments/assets/5ccba4e1-bec8-4c40-960f-1b96df418fe0)
+ ![image](https://github.com/user-attachments/assets/292a1e89-b7b3-4466-883f-d57e63767c85)
 
-     - Correlation Matrix: Coastal Cities and Obesity based on Regions
-       ![image](https://github.com/user-attachments/assets/3ce66264-3d48-49c8-a407-6f0c84307d32)
+ ----------------------------------------------------------------------------------------------------------------
+ **Coastal vs Non-Coastal Cities and Regions in Turkey**
+ 
+ The bar chart shows the distribution of Coastal vs Non-Coastal Cities in Turkey
+ - x-axis shows the cities
+ - y-axis show is the cith is neaby the sea or not. If the city is near by the sea than te result is 1, if not result is 0.
 
-     - Mann-Whitney U: 1011.00
-     - p-value: 0.0069
+ ![image](https://github.com/user-attachments/assets/a070f165-9c2d-4da1-99e1-d91e181c8301)
 
-     As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.39** which is a number not very strong but it is direct proposition.
 
-       However, we decide that is a null or alternative hypothesis with the p-value.
-       Since p-value is 0.0069 smaller than 0.05, we **reject null hypothesis**.
+ Moreover, this pie chart shows the rate of cities with having a coast or not.
 
-     Therefore, _regions which are nearby the sea have positive impact to people with not getting weight and become obese._
+  ![image](https://github.com/user-attachments/assets/a6125668-bba4-4530-beee-0cad5ce02e52)
 
-     3) **Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
+ Distribution of Coastal Cities in Turkey Based on _Regions_
+  ![image](https://github.com/user-attachments/assets/d00bc130-9962-48cc-906c-9e8b6746da91)
+
+ Total Sea Count based on Regions
+  ![image](https://github.com/user-attachments/assets/702dc36d-555f-40e5-b816-a91fc9ef016c)
+
+ 
+## Hypothesis Testing
+
+   1) **Null Hypothesis:** Socioeconomic status have no impact to people with not getting weight and become obese based on regions of Turkey.
+      
+      **Alternative Hypothesis:** Socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey.
+      
+      - Obesity Level and Cities' Socioeconomic Levels with Classment of Regions' in Turkey
+         ![image](https://github.com/user-attachments/assets/6aa0b5aa-7892-4542-9ff5-90192aa4f356)
+
+      - Correlation Matrix: Socioeconomic status and Obesity based on Regions
+         ![image](https://github.com/user-attachments/assets/6188f1bd-bed7-48b2-b8dc-4d7b81a66d47)
+
+      - Mann-Whitney U: 1064.00
+      - p-value: 0.0192
+
+      As can be seen, there is **correlation** detected between socioeconomic status and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.66** which is a number quite trustworthy and there is a direct proposition .
+
+      However, we decide that is a null or alternative hypothesis with the p-value.
+      Since p-value is 0.0192 smaller than 0.05, we **reject null hypothesis**.
+
+      Therefore, _socioeconomic status have positive impact to people with not getting weight and become obese based on regions of Turkey._
+
+  -----------------------------------------------------------------------------------------------
+
+  2)  **Null Hypothesis:** Regions which are nearby the sea have no impact to people with not getting weight and become obese.
+     
+      **Alternative Hypothesis:** Regions which are nearby the sea have positive impact to people with not getting weight and become obese.
         
-        **Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
+   - Obesity Level and Coastal Regions in Turkey
+     ![image](https://github.com/user-attachments/assets/5ccba4e1-bec8-4c40-960f-1b96df418fe0)
 
-     - Distribution of Coastal and Non-Coastal Regions in Turkey with Socioeconomic Statues
-       ![image](https://github.com/user-attachments/assets/a9c29fee-e2db-4132-9340-c267201cea81)
+   - Correlation Matrix: Coastal Cities and Obesity based on Regions
+     ![image](https://github.com/user-attachments/assets/3ce66264-3d48-49c8-a407-6f0c84307d32)
 
-     - Correlation Matrix: Socioeconomic Statues and Coastality based on Regions
-       ![image](https://github.com/user-attachments/assets/1d0a2e1d-38c4-4c1a-853d-62c74d8d8144)
+   - Mann-Whitney U: 1011.00
+   - p-value: 0.0069
 
-     - Mann-Whitney U: 1317.50
-     - p-value: 0.0000
+   As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.39** which is a number not very strong but it is direct proposition.
 
-     As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.58**, it is direct proposition.
+   However, we decide that is a null or alternative hypothesis with the p-value.
+   Since p-value is 0.0069 smaller than 0.05, we **reject null hypothesis**.
 
-       However, we decide that is a null or alternative hypothesis with the p-value.
-       Since p-value is 0.0000 smaller than 0.05, we **reject null hypothesis**.
+   Therefore, _regions which are nearby the sea have positive impact to people with not getting weight and become obese._
 
-     Therefore, _Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.._
+   -----------------------------------------------------------------------------------------------
+  
+   3) **Null Hypothesis:** Regions that are located near the sea have no significant difference in their impact on people’s socioeconomic status compared to regions that are not near the sea.
+      
+      **Alternative Hypothesis:** Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.
+
+   - Distribution of Coastal and Non-Coastal Regions in Turkey with Socioeconomic status
+     ![image](https://github.com/user-attachments/assets/a9c29fee-e2db-4132-9340-c267201cea81)
+
+   - Correlation Matrix: Socioeconomic status and Coastality based on Regions
+     ![image](https://github.com/user-attachments/assets/1d0a2e1d-38c4-4c1a-853d-62c74d8d8144)
+
+   - Mann-Whitney U: 1317.50
+   - p-value: 0.0000
+
+   As can be seen, there is **correlation** detected between being nearby sea and obesity levels. By the Pearson's Correlation method, the correlation they have is **0.58**, it is direct proposition.
+
+   However, we decide that is a null or alternative hypothesis with the p-value.
+   Since p-value is 0.0000 smaller than 0.05, we **reject null hypothesis**.
+
+   Therefore, _Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.._
 
 ## Technologies and Tools
 - **Python:** For statistical analysis
 - **Pandas:** To process data
 - **Machine Learning Model:** Linear Regression
+
+## Limitations and Future Work
+**Limitations**
+
+  **- Limited data on obesity rates:** Obesity rate datasets was just for regions, therefore the correlations between obesity and socioeconomic levels or coastal cities may not be the right answer due to this problem.
+  
+  **- Lack of Variable Control:** Socioeconomic status and obesity rates are influenced by multiple factors such as education level, urbanization, and cultural habits. These variables were not specifically controlled for in this analysis.
+
+-----------------------------------------------------------------------------------------------
+
+**Future Work**
+
+  **- Using More Detailed Data:** Future studies could incorporate data at the household level—such as income, education, and physical activity—to better analyze the causes of obesity.
+  
+  **- Application of Machine Learning:** With larger and more detailed datasets, machine learning techniques could uncover hidden patterns that are not visible through traditional analysis.
+  
+  **- Temporal Analysis:** Analyzing changes in socioeconomic structures and obesity rates over time could help understand long-term trends and impacts.
+  
+  **- Expanding Health Indicators:** Beyond obesity, this research could be enriched by including other health indicators such as diabetes prevalence or life expectancy.
+  
+  **- Collaborations with Field Experts:** Collaborating with local governments or healthcare institutions could enable the collection of primary data, leading to more accurate and impactful findings.
