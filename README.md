@@ -88,6 +88,7 @@ I will collect data from three different sources:
 The grapghs below showes the distribution of obesity based on seven regions in Turkey.
 - x-axis shows the regions
 - y-axis shows the obesity rate
+
 As can be seen in the graph, Turkey's east sides are the least likely to be an obese, and middle side is the most likely to be an obese in Turkey.
 
   ![image](https://github.com/user-attachments/assets/32bd5bbb-0b74-4ace-aba0-8c5917deff3f)
@@ -101,7 +102,8 @@ As can be seen in the graph, Turkey's east sides are the least likely to be an o
 The bar chart below representing the distribution of the socioeconomic levels in 81 cities in Turkey. Cities are grouped based on regions.
 - x-axis shows the cities
 - y-axis shows the socioeconomic level rate
-As can be seen in the grapgh, there is an decline of socioeconomic status.
+
+As can be seen in the graph, there is an decline of socioeconomic status.
 
  ![image](https://github.com/user-attachments/assets/fc43c85e-ddf1-4f7d-b200-5bd4b1933661)
 
@@ -113,6 +115,7 @@ Additionaly the frequency of the socioeconomic level is represented in below as 
 Furthermore,the bar chart below is showing the distribution of socioeconomic levels in seven regions.
 - x-axis shows the regions
 - y-axis shows the socioeconomic level rate
+
 As can be seen, the region with the best socioeconomic level is Marmara, then Aegean is coming; and the region with the least socioeconomic level is Southeastern Anatolia, then Eastern Anatolia is coming.
 
  ![image](https://github.com/user-attachments/assets/292a1e89-b7b3-4466-883f-d57e63767c85)
@@ -203,6 +206,62 @@ As can be seen, the region with the best socioeconomic level is Marmara, then Ae
    Since p-value is 0.0000 smaller than 0.05, we **reject null hypothesis**.
 
    Therefore, _Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.._
+
+## Machine Learning Techniques
+- Regression: Predicting Obesity Rates
+
+- Objective: The goal of this analysis was to predict obesity rates based on socioeconomic status.
+
+**Lineplot**
+
+![image](https://github.com/user-attachments/assets/b0b69a62-bc85-4d3b-ad06-17783b98890c)
+
+- x-axis: Regions
+- y-axis: Obesity Rates
+
+Yellow line stands for real rates, and the green line stands for predicted rates. As can be seen, it looks like it has a linear regression.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Bar Chart**
+
+![image](https://github.com/user-attachments/assets/2373b175-a137-4527-a579-95f9777243b8)
+
+- x-axis: Regions
+- y-axis: Obesity Rates
+
+Yellow bars stands for real rates, and the green bars stands for predicted rates. As can be seen, the differences between prection and real rates are more clear.
+
+We can claim that Aegean and Mediterranean have the closest prediction among the others, while Black Sea has the the widest prediction.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Bar Chart About The Errors**
+
+The aim is to find how did machine learning predicted. Every region had a prediction and a real rate. Therefore there are 3 levels of errors for seven regions:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+
+![image](https://github.com/user-attachments/assets/faf2881a-6c27-4c9e-a17f-ac8f663b12ca)
+
+- x-axis: The error category
+- y-axis: The count of categories which are occured.
+
+As can be seen from the graph, there are **2 low difference, 4 medium difference,** and **1 high difference**. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Pie Chart About The Errors**
+
+The aim is same with _bar chart about errors_, to check how close is the prediction. The same levels of errors are used which are:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+
+![image](https://github.com/user-attachments/assets/78a52dd9-7942-45c9-ad7d-21bb164d6bf7)
+
+As can be seen from the graph, **57.1% has medium level of errors**. In the conclusion of this graph, more than the half of the predictions have error of 1% to 4%.
 
 ## Technologies and Tools
 - **Python:** For statistical analysis
