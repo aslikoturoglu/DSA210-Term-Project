@@ -208,7 +208,10 @@ As can be seen, the region with the best socioeconomic level is Marmara, then Ae
    Therefore, _Regions that are located near the sea have a more positive impact on people’s socioeconomic status compared to regions that are not near the sea.._
 
 ## Machine Learning Techniques
-- Regression: Predicting Obesity Rates
+First Linear Regression model is created and detect the errors. Later, K-Nearest Neighbors Regressor (KNN) model will be created and detect the errors too. In conclusion, we will compare two models and see the differences.
+
+**Step 1: Linear Regression**
+- Linear Regression: Predicting Obesity Rates
 
 - Objective: The goal of this analysis was to predict obesity rates based on socioeconomic status.
 
@@ -221,8 +224,7 @@ As can be seen, the region with the best socioeconomic level is Marmara, then Ae
 
 Yellow line stands for real rates, and the green line stands for predicted rates. As can be seen, it looks like it has a linear regression.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------------------
 **Bar Chart**
 
 ![image](https://github.com/user-attachments/assets/2373b175-a137-4527-a579-95f9777243b8)
@@ -234,7 +236,8 @@ Yellow bars stands for real rates, and the green bars stands for predicted rates
 
 We can claim that Aegean and Mediterranean have the closest prediction among the others, while Black Sea has the the widest prediction.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+**Step 2: Errors of Linear Regression**
 
 **Bar Chart About The Errors**
 
@@ -250,7 +253,7 @@ The aim is to find how did machine learning predicted. Every region had a predic
 
 As can be seen from the graph, there are **2 low difference, 4 medium difference,** and **1 high difference**. 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 **Pie Chart About The Errors**
 
@@ -262,6 +265,106 @@ The aim is same with _bar chart about errors_, to check how close is the predict
 ![image](https://github.com/user-attachments/assets/78a52dd9-7942-45c9-ad7d-21bb164d6bf7)
 
 As can be seen from the graph, **57.1% has medium level of errors**. In the conclusion of this graph, more than the half of the predictions have error of 1% to 4%.
+
+-----------------------------------------------------------------------------------------------
+
+**Step 3: KNN Model**
+
+- K-Nearest Neighbour: Predicting Obesity Rates
+- Objective: The goal of this analysis was to predict obesity rates based on socioeconomic status.
+- I chose KNN because it predicts values based on the most similar data points, which fits well with the idea that regions with similar socioeconomic features may have similar obesity rates. It's also simple, interpretable, and works well for small datasets.
+
+**Line Plot**
+
+![image](https://github.com/user-attachments/assets/196ba66e-101f-4cd4-9b9a-df1c7cdefd3b)
+
+- x-axis: Regions
+- y-axis: Obesity Rates
+
+Yellow line stands for real rates, and the green line stands for predicted rates. As can be seen, it looks like it has a linear regression. It seems prediction accurate but Eastern Anatolia and Southern Eastern is not accurate.
+
+-----------------------------------------------------------------------------------------------
+
+**Bar Chart**
+
+![image](https://github.com/user-attachments/assets/838de469-4396-4f99-b28d-e83a5ed8f112)
+
+- x-axis: Regions
+- y-axis: Obesity Rates
+
+Yellow bars stands for real rates, and the green bars stands for predicted rates. As can be seen, the differences between prection and real rates are more clear.
+
+We can claim that Central Anatolia has the closest prediction instead of Aegean and Mediterranean which have the closest prediction in linear regression. Eatern Anatolia and Southern Anatolia have the widest prediction instead of Black Sea which has the the widest prediction in linear regression .
+
+---------------------------------------------------------------------------------------------------------
+**Step 4: Errors of KNN Model**
+
+**Bar Chart About The Errors**
+
+The aim is to find how did machine learning predicted. Every region had a prediction and a real rate. Therefore there are 3 levels of errors for seven regions:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+  
+![image](https://github.com/user-attachments/assets/ae901be0-295d-42f4-bef5-0efd462a6b80)
+
+- x-axis: The error category
+- y-axis: The count of categories which are occured.
+
+As can be seen from the graph, there are **1 low difference, 4 medium difference,** and **2 high difference**. 
+
+---------------------------------------------------------------------------------------------------------
+**Pie Chart About The Errors**
+
+The aim is same with _bar chart about errors_, to check how close is the prediction. The same levels of errors are used which are:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+
+![image](https://github.com/user-attachments/assets/1960f185-bfe2-4095-ae53-1555ee2ca279)
+
+As can be seen from the graph, **57.1% has medium level of errors**. In the conclusion of this graph, more than the half of the predictions have error of 1% to 4%.
+
+---------------------------------------------------------------------------------------------------------
+
+**Step 5: Prediction Errors Comparing between KNN Model and Linear Regression**
+
+The aim is find how close these predictions' errors
+
+**Bar Chart**
+There are 3 levels of errors for seven regions:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+
+![image](https://github.com/user-attachments/assets/35ce7f22-d72f-401a-ad7b-e171814756db)
+
+- x-axis: The error category
+- y-axis: The count of categories which are occured.
+
+As can be seen from the graph, there are **1 low difference, 4 medium difference,** and **2 high difference**. 
+
+---------------------------------------------------------------------------------------------------------
+
+**Pie Chart**
+
+The aim is same with _bar chart_, to check how close is the prediction. The same levels of errors are used which are:
+- Low Difference: The difference between the prediction and the real rates is between 0% and 1% (including).
+- Medium Difference: The difference between the prediction and the real rates is between 1% (not including) and 4% (including).
+- High Difference: The difference between the prediction and the real rates is higher than 4%.
+
+![image](https://github.com/user-attachments/assets/12029ca8-9f61-4181-bc78-3e0a31eaa90e)
+
+As can be seen from the graph, **57.1% has medium level of errors**. In the conclusion of this graph, more than the half of the predictions have error of 1% to 4%.
+
+---------------------------------------------------------------------------------------------------------
+
+**Conclusion**
+- 1 region has low, 4 regions have medium and 2 regions have hifh difference level based on these predictions. To make it more clear, these numbers of regions shows the how close are the KNN predictions and linear regression predictions.
+- Based on these predictions, they both have 4 medium difference level, but linear regression have 2 low level and 1 high level and KNN have 1 low level and 2 high level.
+- Therefore, linear regression was more close to real rates of obesity rates.
+
+---------------------------------------------------------------------------------------------------------
 
 ## Technologies and Tools
 - **Python:** For statistical analysis
@@ -275,7 +378,6 @@ As can be seen from the graph, **57.1% has medium level of errors**. In the conc
   
   **- Lack of Variable Control:** Socioeconomic status and obesity rates are influenced by multiple factors such as education level, urbanization, and cultural habits. These variables were not specifically controlled for in this analysis.
 
------------------------------------------------------------------------------------------------
 
 **Future Work**
 
