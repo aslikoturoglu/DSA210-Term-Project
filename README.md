@@ -360,7 +360,8 @@ As can be seen from the graph, **57.1% has medium level of errors**. In the conc
 ---------------------------------------------------------------------------------------------------------
 
 **Conclusion**
-- 1 region has low, 4 regions have medium and 2 regions have hifh difference level based on these predictions. To make it more clear, these numbers of regions shows the how close are the KNN predictions and linear regression predictions.
+- 1 region has low, 4 regions have medium and 2 regions have high difference level based on these predictions. To make it more clear, these numbers of regions shows the how close are the KNN predictions and linear regression predictions.
+- We can claim that any region's prediction of KNN model and linear regression have 1% to 4% error between these predictions, so predictions are may change from model to model.
 - Based on these predictions, they both have 4 medium difference level, but linear regression have 2 low level and 1 high level and KNN have 1 low level and 2 high level.
 - Therefore, linear regression was more close to real rates of obesity rates.
 
